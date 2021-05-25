@@ -35,7 +35,7 @@ async function doStuff() {
   await deletedTweets.setup();
 
   const limit = pRateLimit({
-    interval: 1000 * 60 * 15, // 15 minutes
+    interval: 1000 * 60 * 1.5, // accepts ms
     rate: 450,
   });
 
