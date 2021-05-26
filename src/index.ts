@@ -10,9 +10,8 @@ const readFilePromise = promisify(readFile);
 config();
 
 async function doStuff() {
-  const archive = new TwitterArchive(
-    "twitter-2021-04-20-b13ad38adcc00eb894d780aaba32e4763bb01e90c385878da2b1148f47720f86.zip"
-  );
+  const archiveFilePath = process.env.ARCHIVE_FILE_PATH;
+  const archive = new TwitterArchive(archiveFilePath);
 
   await archive.ready();
 

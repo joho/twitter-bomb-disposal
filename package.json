@@ -1,12 +1,12 @@
 {
-  "name": "explorer",
-  "version": "1.0.0",
-  "description": "",
+  "name": "twitter-bomb-disposal",
+  "version": "0.0.1",
+  "description": "Delete all your tweets that don't do numbers",
   "scripts": {
     "start": "ts-node src/index.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "John Barton",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "10.0.0",
     "p-ratelimit": "1.0.1",
